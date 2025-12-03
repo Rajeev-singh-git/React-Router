@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export default function ProfilesPage() {
   const profiles = [1, 2, 3, 4, 5];
@@ -6,14 +6,18 @@ export default function ProfilesPage() {
   return (
     <div>
       {profiles.map((profile) => (
-        <Link
+        <NavLink
           key={profile}
           to={`/profiles/${profile}`}
+          className={({ isActive }) => {
+            return isActive ? "red" : "";
+          }}
           style={{ display: "block", marginBottom: "8px" }}
         >
           Profile {profile}
-        </Link>
+        </NavLink>
       ))}
+      <Outlet></Outlet>
     </div>
   );
 }

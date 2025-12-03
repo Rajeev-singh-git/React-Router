@@ -16,10 +16,12 @@ const router = createBrowserRouter([
   {
     path: "/profiles",
     element: <ProfilesPage></ProfilesPage>,
-  },
-  {
-    path: "/profiles/:profileId",
-    element: <ProfilePage></ProfilePage>,
+    children: [
+      {
+        path: "/profiles/:profileId",
+        element: <ProfilePage></ProfilePage>,
+      },
+    ],
   },
 ]);
 
