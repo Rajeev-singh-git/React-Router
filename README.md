@@ -1,3 +1,30 @@
+# 📚 React Router Mini Project
+
+## 🚀 Start the Application
+
+### 1. Install Dependencies
+
+`npm install`
+
+### 2. Start the Development Server
+
+`npm run dev`
+
+### 3. Open in Browser
+
+After running the command above, open the URL shown in the terminal (usually):  
+`http://localhost:5173/`
+
+## 📦 Other Scripts
+
+- Build for production: `npm run build`
+- Preview production build: `npm run preview`
+
+## 🎯 Purpose
+
+This mini project is created to learn **React Router**, following the tutorial:  
+https://www.youtube.com/watch?v=oTIJunBa6MA
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
